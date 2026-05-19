@@ -13,9 +13,11 @@ spec:
       labels:
         app: order-service
     spec:
+      imagePullSecrets:
+        - name: ecr-secret
       containers:
         - name: order-service
-          image: <AWS_ACCOUNT_ID>.dkr.ecr.us-east-1.amazonaws.com/order-service:1ebec3729cd10fe1eeac6f0858fba58e2da07956
+          image: 646265840239.dkr.ecr.ap-south-1.amazonaws.com/order-service:2e783268064c5aa0dd23bdc4730be99a6147a624
           ports:
             - containerPort: 3004
           env:
@@ -45,6 +47,6 @@ spec:
     app: order-service
   ports:
     - protocol: TCP
-      port: 3002
-      targetPort: 3002
+      port: 3004
+      targetPort: 3004
   type: ClusterIP

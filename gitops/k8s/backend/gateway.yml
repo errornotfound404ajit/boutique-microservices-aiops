@@ -13,9 +13,12 @@ spec:
       labels:
         app: gateway
     spec:
+
+      imagePullSecrets:
+        - name: ecr-secret
       containers:
         - name: gateway
-          image: <AWS_ACCOUNT_ID>.dkr.ecr.us-east-1.amazonaws.com/gateway:1ebec3729cd10fe1eeac6f0858fba58e2da07956
+          image: 646265840239.dkr.ecr.ap-south-1.amazonaws.com/gateway:2e783268064c5aa0dd23bdc4730be99a6147a624
           ports:
             - containerPort: 3001
           env:
