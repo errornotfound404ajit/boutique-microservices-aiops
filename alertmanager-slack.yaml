@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: alertmanager-slack-config
+  namespace: monitoring
+
+stringData:
+  alertmanager.yaml: |
+    global:
+      resolve_timeout: 5m
+
+    route:
+      receiver: slack-notifications
+
+    receivers:
+    - name: slack-notifications
+
+      slack_configs:
+      - api_url: "REPLACE_WITH_SLACK_WEBHOOK"
+
+        channel: "#alerts"
+
+        title: "{{ .CommonAnnotations.summary }}"
+
+        text: "{{ .CommonAnnotations.description }}"

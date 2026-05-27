@@ -77,3 +77,37 @@ frontend/build/
 # Kubernetes secrets (keep templates)
 k8s/**/*.secret.yaml
 k8s/**/secrets/
+
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+
+# Environment
+.env
+
+# Kubernetes / AWS
+.kube/
+*.pem
+*.key
+*.crt
+
+# Terraform
+terraform.tfstate
+terraform.tfstate.backup
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Reports
+reports/*.pdf
+
+# Streamlit cache
+.streamlit/
+
+# VSCode optional
+.vscode/settings.json
