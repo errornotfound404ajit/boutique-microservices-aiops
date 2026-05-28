@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="docs/assets/kira-banner.png" alt="KIRA AIOps Banner" width="100%" />
+<img src="docs/assets/aiops-dashboard-2.png.png" alt="KIRA AIOps — Boutique Microservices Platform" width="100%" />
 
 # 🤖 Boutique Microservices AIOps Platform
 
@@ -30,7 +30,7 @@
 
 <br/>
 
-[🚀 Live Demo](#) · [📖 Docs](#installation-guide) · [🐛 Issues](https://github.com/errornotfound404ajit/boutique-microservices-aiops/issues) · [💬 Discussions](https://github.com/errornotfound404ajit/boutique-microservices-aiops/discussions)
+[📖 Docs](#installation-guide) · [🐛 Issues](https://github.com/errornotfound404ajit/boutique-microservices-aiops/issues) · [💬 Discussions](https://github.com/errornotfound404ajit/boutique-microservices-aiops/discussions)
 
 </div>
 
@@ -283,49 +283,61 @@ graph LR
 
 ## 📸 Screenshots
 
-### KIRA Chat Interface
+### 🤖 KIRA AIOps Chat Interface
 
-| KIRA Streamlit UI | Active Incident Sidebar |
+| KIRA Chat UI | KIRA Chat (Extended) |
 |---|---|
-| ![KIRA Chat](docs/screenshots/kira-chat-ui.png) | ![Incident Detection](docs/screenshots/kira-incidents.png) |
+| ![KIRA Chat](docs/screenshots/aiops-chat.png.png) | ![KIRA Chat 2](docs/screenshots/aiops-chat-2.png.png) |
 
 *KIRA provides natural-language root cause analysis by ingesting live Prometheus metrics, Loki logs, and Kubernetes pod health.*
 
-### Grafana Observability Dashboards
+### 📊 KIRA AIOps Dashboard
 
-| Service Health Dashboard | AIOps Metrics Panel |
+| AIOps Main Dashboard | Incident Report |
 |---|---|
-| ![Grafana Dashboard](docs/screenshots/grafana-dashboard.png) | ![AIOps Panels](docs/screenshots/grafana-aiops-panels.png) |
+| ![AIOps Dashboard](docs/screenshots/aiops-dashboard.png.png) | ![Incident Report](docs/screenshots/aiops-incident-report.png.png) |
 
-*Grafana dashboards provisioned via code — AIOps-oriented panels show service uptime, error rates, HTTP response codes, and pod restart frequency.*
+*AI-generated dashboards and downloadable PDF incident reports — produced automatically from live cluster telemetry.*
 
-### Prometheus Metrics Explorer
+### 📈 Grafana Observability Dashboards
 
-![Prometheus](docs/screenshots/prometheus-explorer.png)
-
-*Prometheus scraping internal Docker/Kubernetes service endpoints. All 6 microservices report health metrics.*
-
-### Kubernetes Cluster State
-
-| Pods Running | ArgoCD GitOps Sync |
+| Grafana Observability Dashboard | Grafana Cluster View |
 |---|---|
-| ![K8s Pods](docs/screenshots/k8s-pods.png) | ![ArgoCD](docs/screenshots/argocd-sync.png) |
+| ![Grafana Observability](docs/screenshots/grafana-observability-dashboard.png.png) | ![Grafana Cluster](docs/screenshots/grafana-cluster.png.png) |
 
-### CI/CD Pipeline
-
-| GitHub Actions Pipeline | ECR Image Push |
+| Grafana Alerting System | |
 |---|---|
-| ![CI Pipeline](docs/screenshots/github-actions-pipeline.png) | ![ECR](docs/screenshots/ecr-images.png) |
+| ![Grafana Alerting](docs/screenshots/grafana-alerting-system.png.png) | |
 
-*GitHub Actions workflow builds all service images, pushes to AWS ECR, and updates Kubernetes manifests — triggering ArgoCD auto-sync.*
+*Grafana dashboards provisioned via code — AIOps-oriented panels show service uptime, error rates, HTTP response codes, pod restart frequency, and live alert rules.*
 
-### Frontend Application
+### 🔥 Prometheus Metrics Explorer
 
-![Boutique Frontend](docs/screenshots/frontend-app.png)
+![Prometheus Dashboard](docs/screenshots/prometheus-dashboard.png.png)
+
+*Prometheus scraping internal Docker/Kubernetes service endpoints. All 6 microservices report health metrics in real time.*
+
+### ☸️ Kubernetes Cluster State
+
+| Kubernetes Pods | EKS Nodes |
+|---|---|
+| ![K8s Pods](docs/screenshots/kubernetes-pods.png.png) | ![EKS Nodes](docs/screenshots/eks-nodes.png.png) |
+
+*Kubernetes deployments running across the `boutique` namespace, with EKS worker nodes provisioned via AWS.*
+
+### 🔁 ArgoCD GitOps
+
+| ArgoCD Application Overview | ArgoCD Microservices Topology |
+|---|---|
+| ![ArgoCD Overview](docs/screenshots/argocd-application-overview.png.png) | ![ArgoCD Topology](docs/screenshots/argocd-microservices-topology.png.png) |
+
+*ArgoCD continuously syncs the GitOps manifests to the Kubernetes cluster — showing full microservices topology and application health.*
+
+### 🛒 Frontend Application
+
+![Boutique Frontend UI](docs/screenshots/frontend_ui.png.png)
 
 *The Boutique e-commerce storefront with product catalog, cart, and checkout flow.*
-
-> 📁 **Screenshot files** are located at `docs/screenshots/`. Replace placeholder images with actual screenshots from your deployment.
 
 ---
 
@@ -338,82 +350,58 @@ boutique-microservices-aiops/
 │   └── workflows/
 │       └── ci.yml                    # GitHub Actions CI/CD pipeline
 │
-├── projects/
-│   └── boutique-microservices/
-│       │
-│       ├── docker-compose.yml        # Full local stack orchestration
-│       │
-│       ├── services/
-│       │   ├── frontend/             # React/Next.js storefront
-│       │   ├── gateway/              # API Gateway (Node.js)
-│       │   ├── auth/                 # Authentication service
-│       │   ├── product-service/      # Product catalog service
-│       │   ├── order-service/        # Order creation service
-│       │   ├── orders/               # Order management service
-│       │   └── user-service/         # User profile service
-│       │
-│       ├── monitoring/
-│       │   ├── prometheus/
-│       │   │   └── prometheus.yml    # Scrape targets config
-│       │   ├── grafana/
-│       │   │   ├── provisioning/
-│       │   │   │   ├── datasources/  # Prometheus + Loki datasources
-│       │   │   │   └── dashboards/   # Auto-provisioned dashboards
-│       │   │   └── dashboards/       # Dashboard JSON definitions
-│       │   └── loki/
-│       │       └── loki-config.yml   # Loki storage config
-│       │
-│       ├── gitops/
-│       │   └── k8s/
-│       │       ├── namespace/
-│       │       │   └── boutique-ns.yml
-│       │       ├── backend/
-│       │       │   ├── auth.yml
-│       │       │   ├── product-service.yml
-│       │       │   ├── order-service.yml
-│       │       │   ├── orders.yml
-│       │       │   └── user-service.yml
-│       │       ├── frontend/
-│       │       │   └── frontend.yml
-│       │       ├── database/
-│       │       │   ├── postgres-statefulset.yml
-│       │       │   └── postgres-pvc.yml
-│       │       ├── secrets/
-│       │       │   └── app-secrets.yml
-│       │       └── monitoring/
-│       │           └── kube-prometheus-stack.yml
-│       │
-│       └── kira-aiops/               # 🤖 KIRA AI Agent
-│           ├── app.py                # Streamlit Chat UI (main entry)
-│           ├── requirements.txt      # Python dependencies
-│           ├── .env                  # API keys (gitignored)
-│           ├── __init__.py
-│           │
-│           ├── ai/
-│           │   ├── __init__.py
-│           │   ├── gemini_agent.py   # Core AI reasoning engine
-│           │   └── incident_detector.py  # Rule-based SEV classifier
-│           │
-│           ├── tools/
-│           │   ├── __init__.py
-│           │   ├── health.py         # Kubernetes pod health fetcher
-│           │   ├── metrics.py        # Prometheus metrics fetcher
-│           │   └── logs.py           # Loki log fetcher
-│           │
-│           └── report_generator.py  # PDF incident report builder
+├── backend/                          # Backend microservices
+├── frontend/                         # React/Next.js storefront
+├── database/                         # DB schemas and migrations
+├── grafana/                          # Grafana provisioning configs
+├── prometheus/                       # Prometheus scrape config
+├── shared/                           # Shared utilities/libs
 │
-└── docs/
-    ├── assets/
-    │   └── kira-banner.png
-    └── screenshots/
-        ├── kira-chat-ui.png
-        ├── kira-incidents.png
-        ├── grafana-dashboard.png
-        ├── prometheus-explorer.png
-        ├── k8s-pods.png
-        ├── argocd-sync.png
-        ├── github-actions-pipeline.png
-        └── frontend-app.png
+├── gitops/                           # GitOps Kubernetes manifests
+│   └── k8s/
+│       ├── namespace/
+│       ├── backend/
+│       ├── frontend/
+│       ├── database/
+│       └── secrets/
+│
+├── kira-aiops/                       # 🤖 KIRA AI Agent
+│   ├── app.py                        # Streamlit Chat UI (main entry)
+│   ├── requirements.txt
+│   ├── .env                          # API keys (gitignored)
+│   ├── ai/
+│   │   ├── gemini_agent.py           # Core AI reasoning engine
+│   │   └── incident_detector.py      # Rule-based SEV classifier
+│   ├── tools/
+│   │   ├── health.py                 # Kubernetes pod health fetcher
+│   │   ├── metrics.py                # Prometheus metrics fetcher
+│   │   └── logs.py                   # Loki log fetcher
+│   └── report_generator.py           # PDF incident report builder
+│
+├── docs/
+│   ├── assets/
+│   │   └── aiops-dashboard-2.png.png # Banner image
+│   └── screenshots/
+│       ├── aiops-chat.png.png
+│       ├── aiops-chat-2.png.png
+│       ├── aiops-dashboard.png.png
+│       ├── aiops-incident-report.png.png
+│       ├── argocd-application-overview.png.png
+│       ├── argocd-microservices-topology.png.png
+│       ├── eks-nodes.png.png
+│       ├── frontend_ui.png.png
+│       ├── grafana-alerting-system.png.png
+│       ├── grafana-cluster.png.png
+│       ├── grafana-observability-dashboard.png.png
+│       ├── kubernetes-pods.png.png
+│       └── prometheus-dashboard.png.png
+│
+├── docker-compose.yml                # Full local stack orchestration
+├── .env.example
+├── .gitignore
+├── alertmanager-slack.yaml
+├── pod-restart-alert.yaml
+└── health-check.sh
 ```
 
 ---
