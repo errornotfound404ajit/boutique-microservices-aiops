@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="docs/assets/aiops-dashboard-2.png.png" alt="KIRA AIOps — Boutique Microservices Platform" width="100%" />
+<img src="https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/aiops-dashboard-2.png" alt="KIRA AIOps — Boutique Microservices Platform" width="100%" />
 
-# 🤖 Boutique Microservices AIOps Platform
+# Boutique Microservices AIOps Platform
 
 ### *KIRA — Kubernetes Intelligent Reasoning Agent*
 
@@ -36,32 +36,32 @@
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
-- [Overview](#-overview)
-- [Key Features](#-key-features)
-- [System Architecture](#-system-architecture)
-- [Tech Stack](#-tech-stack)
-- [Screenshots](#-screenshots)
-- [Project Structure](#-project-structure)
-- [Installation Guide](#-installation-guide)
-- [Environment Variables](#-environment-variables)
-- [Docker Setup](#-docker-setup)
-- [Kubernetes Deployment](#-kubernetes-deployment)
-- [CI/CD Pipeline](#-cicd-pipeline)
-- [GitOps with ArgoCD](#-gitops-with-argocd)
-- [Monitoring & Observability](#-monitoring--observability)
-- [KIRA — The AI Agent](#-kira--the-ai-agent)
-- [API Documentation](#-api-documentation)
-- [Security Features](#-security-features)
-- [Performance Optimizations](#-performance-optimizations)
-- [Future Enhancements](#-future-enhancements)
-- [Contributors](#-contributors)
-- [License](#-license)
+- [Overview](#overview)
+- [Key Features](#key-features)
+- [System Architecture](#system-architecture)
+- [Tech Stack](#tech-stack)
+- [Screenshots](#screenshots)
+- [Project Structure](#project-structure)
+- [Installation Guide](#installation-guide)
+- [Environment Variables](#environment-variables)
+- [Docker Setup](#docker-setup)
+- [Kubernetes Deployment](#kubernetes-deployment)
+- [CI/CD Pipeline](#cicd-pipeline)
+- [GitOps with ArgoCD](#gitops-with-argocd)
+- [Monitoring & Observability](#monitoring--observability)
+- [KIRA — The AI Agent](#kira--the-ai-agent)
+- [API Documentation](#api-documentation)
+- [Security Features](#security-features)
+- [Performance Optimizations](#performance-optimizations)
+- [Future Enhancements](#future-enhancements)
+- [Contributors](#contributors)
+- [License](#license)
 
 ---
 
-## 🌐 Overview
+## Overview
 
 **Boutique Microservices AIOps Platform** is a production-grade, cloud-native e-commerce application built on a microservices architecture, extended with a fully functional **AIOps observability layer** powered by AI.
 
@@ -85,28 +85,28 @@ The platform demonstrates the complete DevOps/SRE lifecycle:
 
 ---
 
-## ✨ Key Features
+## Key Features
 
-### 🏗️ Microservices Platform
+### Microservices Platform
 - **6 independent backend services**: `auth`, `gateway`, `product-service`, `order-service`, `orders`, `user-service`
 - **PostgreSQL** with per-service database isolation (`auth_db`, `orders_db`, `products_db`, `users_db`)
 - **API Gateway** pattern — single entry point for all frontend traffic
 - **Docker Compose** for local orchestration with full networking and dependency management
 
-### ☸️ Kubernetes & Cloud
+### Kubernetes & Cloud
 - **Kubernetes namespaces** for isolation: `boutique`, `monitoring`, `argocd`
 - **StatefulSet** for PostgreSQL with persistent volume claims
 - **Kubernetes Secrets** for credential management
 - **AWS EKS** support with IAM, IRSA, and EBS CSI for cloud-grade storage
 - **ECR** private container registry with automated image tagging
 
-### 🔄 GitOps & CI/CD
+### GitOps & CI/CD
 - **GitHub Actions** CI pipeline: build → test → push to ECR → update manifests
 - **ArgoCD** GitOps continuous delivery: automatic manifest sync from Git to cluster
 - **Image tag automation** via `sed` in CI pipeline for seamless rollouts
 - **Branch-based workflows** with environment-specific deployments
 
-### 📊 Observability Stack
+### Observability Stack
 - **Prometheus** — pull-based metrics scraping from all microservices
 - **Grafana** — visual dashboards with provisioned datasources and AIOps panels
 - **Loki** — log aggregation for all pods in the `boutique` namespace
@@ -114,7 +114,7 @@ The platform demonstrates the complete DevOps/SRE lifecycle:
 - **Promtail** daemonset for Kubernetes log shipping to Loki
 - **Fluent Bit** (EKS variant) for cloud-native log forwarding to CloudWatch/Loki
 
-### 🤖 KIRA — AI Observability Agent
+### KIRA — AI Observability Agent
 - **Google Gemini 1.5 Flash** as the reasoning engine
 - **Retrieval-Augmented Observability (RAO)**: KIRA fetches real telemetry before reasoning
 - **3-tool sensing layer**: `fetch_health()` → K8s API, `fetch_metrics()` → Prometheus, `fetch_logs()` → Loki
@@ -125,7 +125,7 @@ The platform demonstrates the complete DevOps/SRE lifecycle:
 
 ---
 
-## 🏛️ System Architecture
+## System Architecture
 
 ### High-Level Architecture
 
@@ -220,7 +220,7 @@ graph LR
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Application Layer
 
@@ -281,67 +281,67 @@ graph LR
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
-### 🤖 KIRA AIOps Chat Interface
+### KIRA — AI Chat Interface
 
 | KIRA Chat UI | KIRA Chat (Extended) |
 |---|---|
-| ![KIRA Chat](docs/screenshots/aiops-chat.png.png) | ![KIRA Chat 2](docs/screenshots/aiops-chat-2.png.png) |
+| ![KIRA Chat](https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/aiops-chat.png) | ![KIRA Chat 2](https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/aiops-chat-2.png) |
 
 *KIRA provides natural-language root cause analysis by ingesting live Prometheus metrics, Loki logs, and Kubernetes pod health.*
 
-### 📊 KIRA AIOps Dashboard
+### KIRA — AIOps Dashboard & Incident Reports
 
 | AIOps Main Dashboard | Incident Report |
 |---|---|
-| ![AIOps Dashboard](docs/screenshots/aiops-dashboard.png.png) | ![Incident Report](docs/screenshots/aiops-incident-report.png.png) |
+| ![AIOps Dashboard](https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/aiops-dashboard.png) | ![Incident Report](https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/aiops-incident-report.png) |
 
 *AI-generated dashboards and downloadable PDF incident reports — produced automatically from live cluster telemetry.*
 
-### 📈 Grafana Observability Dashboards
+### Grafana — Observability Dashboards
 
 | Grafana Observability Dashboard | Grafana Cluster View |
 |---|---|
-| ![Grafana Observability](docs/screenshots/grafana-observability-dashboard.png.png) | ![Grafana Cluster](docs/screenshots/grafana-cluster.png.png) |
+| ![Grafana Observability](https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/grafana-observability-dashboard.png) | ![Grafana Cluster](https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/grafana-cluster.png) |
 
 | Grafana Alerting System | |
 |---|---|
-| ![Grafana Alerting](docs/screenshots/grafana-alerting-system.png.png) | |
+| ![Grafana Alerting](https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/grafana-alerting-system.png) | |
 
 *Grafana dashboards provisioned via code — AIOps-oriented panels show service uptime, error rates, HTTP response codes, pod restart frequency, and live alert rules.*
 
-### 🔥 Prometheus Metrics Explorer
+### Prometheus — Metrics Explorer
 
-![Prometheus Dashboard](docs/screenshots/prometheus-dashboard.png.png)
+![Prometheus Dashboard](https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/prometheus-dashboard.png)
 
 *Prometheus scraping internal Docker/Kubernetes service endpoints. All 6 microservices report health metrics in real time.*
 
-### ☸️ Kubernetes Cluster State
+### Kubernetes — Cluster State
 
 | Kubernetes Pods | EKS Nodes |
 |---|---|
-| ![K8s Pods](docs/screenshots/kubernetes-pods.png.png) | ![EKS Nodes](docs/screenshots/eks-nodes.png.png) |
+| ![K8s Pods](https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/kubernetes-pods.png) | ![EKS Nodes](https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/eks-nodes.png) |
 
 *Kubernetes deployments running across the `boutique` namespace, with EKS worker nodes provisioned via AWS.*
 
-### 🔁 ArgoCD GitOps
+### ArgoCD — GitOps Continuous Delivery
 
 | ArgoCD Application Overview | ArgoCD Microservices Topology |
 |---|---|
-| ![ArgoCD Overview](docs/screenshots/argocd-application-overview.png.png) | ![ArgoCD Topology](docs/screenshots/argocd-microservices-topology.png.png) |
+| ![ArgoCD Overview](https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/argocd-application-overview.png) | ![ArgoCD Topology](https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/argocd-microservices-topology.png) |
 
 *ArgoCD continuously syncs the GitOps manifests to the Kubernetes cluster — showing full microservices topology and application health.*
 
-### 🛒 Frontend Application
+### Frontend — Boutique Storefront
 
-![Boutique Frontend UI](docs/screenshots/frontend_ui.png.png)
+![Boutique Frontend UI](https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/frontend_ui.png)
 
 *The Boutique e-commerce storefront with product catalog, cart, and checkout flow.*
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 boutique-microservices-aiops/
@@ -406,7 +406,7 @@ boutique-microservices-aiops/
 
 ---
 
-## 🚀 Installation Guide
+## Installation Guide
 
 ### Prerequisites
 
@@ -500,7 +500,7 @@ streamlit run app.py
 
 ---
 
-## 🔐 Environment Variables
+## Environment Variables
 
 ### Core Application (`.env` in `kira-aiops/`)
 
@@ -540,7 +540,7 @@ stringData:
 
 ---
 
-## 🐳 Docker Setup
+## Docker Setup
 
 ### Service Architecture in `docker-compose.yml`
 
@@ -599,7 +599,7 @@ http://loki:3100
 
 ---
 
-## ☸️ Kubernetes Deployment
+## Kubernetes Deployment
 
 ### Local — Minikube
 
@@ -731,7 +731,7 @@ aws ecr get-login-password --region us-east-1 | \
 
 ---
 
-## 🔄 CI/CD Pipeline
+## CI/CD Pipeline
 
 ### GitHub Actions Workflow
 
@@ -825,7 +825,7 @@ jobs:
 
 ---
 
-## 🔁 GitOps with ArgoCD
+## GitOps with ArgoCD
 
 ArgoCD watches the `gitops/` directory and auto-syncs any manifest changes to the Kubernetes cluster.
 
@@ -872,7 +872,7 @@ spec:
 
 ---
 
-## 📊 Monitoring & Observability
+## Monitoring & Observability
 
 ### Prometheus
 
@@ -956,7 +956,7 @@ curl http://localhost:3100/loki/api/v1/label/namespace/values
 
 ---
 
-## 🤖 KIRA — The AI Agent
+## KIRA — The AI Agent
 
 KIRA (**K**ubernetes **I**ntelligent **R**easoning **A**gent) is the AIOps brain of this platform. It transforms raw telemetry into actionable engineering intelligence.
 
@@ -1085,7 +1085,7 @@ fpdf2>=2.7.0
 
 ---
 
-## 📡 API Documentation
+## API Documentation
 
 ### Gateway Routes
 
@@ -1117,7 +1117,7 @@ users      → http://user-service:3006
 
 ---
 
-## 🔒 Security Features
+## Security Features
 
 | Feature | Implementation | Status |
 |---------|---------------|--------|
@@ -1134,7 +1134,7 @@ users      → http://user-service:3006
 
 ---
 
-## ⚡ Performance Optimizations
+## Performance Optimizations
 
 - **Docker layer caching** — images structured for maximum cache reuse in CI builds
 - **Multi-stage Docker builds** — production images exclude dev dependencies
@@ -1147,7 +1147,7 @@ users      → http://user-service:3006
 
 ---
 
-## 🗺️ Future Enhancements
+## Future Enhancements
 
 | Feature | Priority | Description |
 |---------|----------|-------------|
@@ -1166,7 +1166,7 @@ users      → http://user-service:3006
 
 ---
 
-## 🤝 Contributors
+## Contributors
 
 <table>
   <tr>
@@ -1182,7 +1182,7 @@ users      → http://user-service:3006
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
 
@@ -1199,7 +1199,7 @@ furnished to do so, subject to the following conditions: [...]
 
 ---
 
-## 📬 Contact
+## Contact
 
 **Ajit** — [@errornotfound404ajit](https://github.com/errornotfound404ajit)
 
