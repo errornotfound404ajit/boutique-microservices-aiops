@@ -1,7 +1,4 @@
 <div align="center">
-
-<img src="https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/aiops-dashboard-2.png" alt="Boutique Microservices AIOps Platform" width="100%" />
-
 # Boutique Microservices AIOps Platform
 
 ### *KIRA — Kubernetes Intelligent Reasoning Agent*
