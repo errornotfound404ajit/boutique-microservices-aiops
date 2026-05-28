@@ -286,8 +286,8 @@ graph LR
 ### KIRA — AI Chat Interface
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/aiops-chat.png" width="49%" alt="KIRA Chat UI" />
-  <img src="https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/aiops-chat-2.png" width="49%" alt="KIRA Chat Extended" />
+  <img src="https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/aiops-chat.png" width="49%" alt="KIRA Chat UI" />
+  <img src="https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/aiops-chat-2.png" width="49%" alt="KIRA Chat Extended" />
 </p>
 
 *KIRA provides natural-language root cause analysis by ingesting live Prometheus metrics, Loki logs, and Kubernetes pod health.*
@@ -297,8 +297,8 @@ graph LR
 ### KIRA — AIOps Dashboard & Incident Reports
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/aiops-dashboard.png" width="49%" alt="AIOps Dashboard" />
-  <img src="https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/aiops-incident-report.png" width="49%" alt="AI Incident Report" />
+  <img src="https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/aiops-dashboard.png" width="49%" alt="AIOps Dashboard" />
+  <img src="https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/aiops-incident-report.png" width="49%" alt="AI Incident Report" />
 </p>
 
 *AI-generated dashboards and downloadable PDF incident reports — produced automatically from live cluster telemetry.*
@@ -308,12 +308,12 @@ graph LR
 ### Grafana — Observability Dashboards
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/grafana-observability-dashboard.png" width="49%" alt="Grafana Observability Dashboard" />
-  <img src="https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/grafana-cluster.png" width="49%" alt="Grafana Cluster View" />
+  <img src="https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/grafana-observability-dashboard.png" width="49%" alt="Grafana Observability Dashboard" />
+  <img src="https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/grafana-cluster.png" width="49%" alt="Grafana Cluster View" />
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/grafana-alerting-system.png" width="70%" alt="Grafana Alerting System" />
+  <img src="https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/grafana-alerting-system.png" width="70%" alt="Grafana Alerting System" />
 </p>
 
 *Grafana dashboards provisioned via code — AIOps-oriented panels show service uptime, error rates, HTTP response codes, pod restart frequency, and live alert rules.*
@@ -323,7 +323,7 @@ graph LR
 ### Prometheus — Metrics Explorer
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/prometheus-dashboard.png" width="90%" alt="Prometheus Dashboard" />
+  <img src="https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/prometheus-dashboard.png" width="90%" alt="Prometheus Dashboard" />
 </p>
 
 *Prometheus scraping internal Docker/Kubernetes service endpoints. All 6 microservices report health metrics in real time.*
@@ -333,8 +333,8 @@ graph LR
 ### Kubernetes — Cluster State
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/kubernetes-pods.png" width="49%" alt="Kubernetes Pods" />
-  <img src="https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/eks-nodes.png" width="49%" alt="EKS Nodes" />
+  <img src="https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/kubernetes-pods.png" width="49%" alt="Kubernetes Pods" />
+  <img src="https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/eks-nodes.png" width="49%" alt="EKS Nodes" />
 </p>
 
 *Kubernetes deployments running across the `boutique` namespace, with EKS worker nodes provisioned via AWS.*
@@ -344,8 +344,8 @@ graph LR
 ### ArgoCD — GitOps Continuous Delivery
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/argocd-application-overview.png" width="49%" alt="ArgoCD Application Overview" />
-  <img src="https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/argocd-microservices-topology.png" width="49%" alt="ArgoCD Microservices Topology" />
+  <img src="https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/argocd-application-overview.png" width="49%" alt="ArgoCD Application Overview" />
+  <img src="https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/argocd-microservices-topology.png" width="49%" alt="ArgoCD Microservices Topology" />
 </p>
 
 *ArgoCD continuously syncs the GitOps manifests to the Kubernetes cluster — showing full microservices topology and application health.*
@@ -355,7 +355,7 @@ graph LR
 ### Frontend — Boutique Storefront
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/frontend_ui.png" width="90%" alt="Boutique Frontend UI" />
+  <img src="https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/frontend_ui.png" width="90%" alt="Boutique Frontend UI" />
 </p>
 
 *The Boutique e-commerce storefront with product catalog, cart, and checkout flow.*
