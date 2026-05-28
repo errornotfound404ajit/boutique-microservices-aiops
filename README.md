@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/aiops-dashboard-2.png" alt="KIRA AIOps — Boutique Microservices Platform" width="100%" />
+<img src="https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/aiops-dashboard-2.png" alt="Boutique Microservices AIOps Platform" width="100%" />
 
 # Boutique Microservices AIOps Platform
 
@@ -285,57 +285,78 @@ graph LR
 
 ### KIRA — AI Chat Interface
 
-| KIRA Chat UI | KIRA Chat (Extended) |
-|---|---|
-| ![KIRA Chat](https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/aiops-chat.png) | ![KIRA Chat 2](https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/aiops-chat-2.png) |
+<p align="center">
+  <img src="https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/aiops-chat.png" width="49%" alt="KIRA Chat UI" />
+  <img src="https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/aiops-chat-2.png" width="49%" alt="KIRA Chat Extended" />
+</p>
 
 *KIRA provides natural-language root cause analysis by ingesting live Prometheus metrics, Loki logs, and Kubernetes pod health.*
 
+---
+
 ### KIRA — AIOps Dashboard & Incident Reports
 
-| AIOps Main Dashboard | Incident Report |
-|---|---|
-| ![AIOps Dashboard](https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/aiops-dashboard.png) | ![Incident Report](https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/aiops-incident-report.png) |
+<p align="center">
+  <img src="https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/aiops-dashboard.png" width="49%" alt="AIOps Dashboard" />
+  <img src="https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/aiops-incident-report.png" width="49%" alt="AI Incident Report" />
+</p>
 
 *AI-generated dashboards and downloadable PDF incident reports — produced automatically from live cluster telemetry.*
 
+---
+
 ### Grafana — Observability Dashboards
 
-| Grafana Observability Dashboard | Grafana Cluster View |
-|---|---|
-| ![Grafana Observability](https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/grafana-observability-dashboard.png) | ![Grafana Cluster](https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/grafana-cluster.png) |
+<p align="center">
+  <img src="https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/grafana-observability-dashboard.png" width="49%" alt="Grafana Observability Dashboard" />
+  <img src="https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/grafana-cluster.png" width="49%" alt="Grafana Cluster View" />
+</p>
 
-| Grafana Alerting System | |
-|---|---|
-| ![Grafana Alerting](https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/grafana-alerting-system.png) | |
+<p align="center">
+  <img src="https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/grafana-alerting-system.png" width="70%" alt="Grafana Alerting System" />
+</p>
 
 *Grafana dashboards provisioned via code — AIOps-oriented panels show service uptime, error rates, HTTP response codes, pod restart frequency, and live alert rules.*
 
+---
+
 ### Prometheus — Metrics Explorer
 
-![Prometheus Dashboard](https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/prometheus-dashboard.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/prometheus-dashboard.png" width="90%" alt="Prometheus Dashboard" />
+</p>
 
 *Prometheus scraping internal Docker/Kubernetes service endpoints. All 6 microservices report health metrics in real time.*
 
+---
+
 ### Kubernetes — Cluster State
 
-| Kubernetes Pods | EKS Nodes |
-|---|---|
-| ![K8s Pods](https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/kubernetes-pods.png) | ![EKS Nodes](https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/eks-nodes.png) |
+<p align="center">
+  <img src="https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/kubernetes-pods.png" width="49%" alt="Kubernetes Pods" />
+  <img src="https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/eks-nodes.png" width="49%" alt="EKS Nodes" />
+</p>
 
 *Kubernetes deployments running across the `boutique` namespace, with EKS worker nodes provisioned via AWS.*
 
+---
+
 ### ArgoCD — GitOps Continuous Delivery
 
-| ArgoCD Application Overview | ArgoCD Microservices Topology |
-|---|---|
-| ![ArgoCD Overview](https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/argocd-application-overview.png) | ![ArgoCD Topology](https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/argocd-microservices-topology.png) |
+<p align="center">
+  <img src="https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/argocd-application-overview.png" width="49%" alt="ArgoCD Application Overview" />
+  <img src="https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/argocd-microservices-topology.png" width="49%" alt="ArgoCD Microservices Topology" />
+</p>
 
 *ArgoCD continuously syncs the GitOps manifests to the Kubernetes cluster — showing full microservices topology and application health.*
 
+---
+
 ### Frontend — Boutique Storefront
 
-![Boutique Frontend UI](https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/frontend_ui.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/errornotfound404ajit/boutique-microservices-aiops/main/docs/assets/frontend_ui.png" width="90%" alt="Boutique Frontend UI" />
+</p>
 
 *The Boutique e-commerce storefront with product catalog, cart, and checkout flow.*
 
